@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url('fondo.jpg');
+    background-repeat: no-repeat;
+  }
+  
+  .form-register {
+    width: 30%;
+    background: #f0efeb;
+    padding: 30px;
+    margin: auto;
+    margin-top: 4%;
+    border-radius: 2%;
+    font-family: 'calibri';
+    color: #d62f31;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+  }
+  
+  .form-register img {
+    position: relative;
+    width: 25%;
+    left: 37%;
+    margin-bottom: 10%;
+  }
+
+  .controls {
+    width: 100%;
+    background: #f0efeb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #d62f31;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: #d62f31;
+  }
+  
+  .form-register .p {
+    margin-right: 5%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 5%;
+  }
+  
+  .form-register a {
+    color: #d62f31;
+    text-decoration: underline;
+  }
+  
+  .form-register a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #d62f31;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-color: transparent;
+    box-shadow: none;
+    cursor: pointer;
+  }
+@media screen and (max-width: 800px){
+  body {
+    background-image: url('fondo.jpg');
+    background-repeat: no-repeat;
+  }
+
+  .form-register {
+    width: 85%;
+    background: #f0efeb;
+    padding: 30px;
+    margin: auto;
+    margin-top: 35%;
+    border-radius: 2%;
+    font-family: 'calibri';
+    color: #d62f31;
+    box-shadow: 7px 13px 37px #000;
+  }
+}

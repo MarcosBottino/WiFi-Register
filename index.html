@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="style.css">
+  <title>EJ1 Maschwitz Mall - Wifi</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet"></head>
+<body>
+  <section class="form-register">
+    <div class="logo">
+        <img src="logo.png" />
+    </div>
+    <h4>¡Ingresa tus datos para acceder al WiFi!</h4>
+    <form action="https://sheetdb.io/api/v1/nywk5pf3iefeg" method="POST" id="sheetdb-form">
+    <input class="controls" type="text" name="data[nombres]" id="nombres" placeholder="Ingrese su Nombre">
+    <input class="controls" type="text" name="data[apellidos]" id="apellidos" placeholder="Ingrese su Apellido">
+    <input class="controls" type="email" name="data[correo]" id="correo" placeholder="Ingrese su Correo">
+    <!--<p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>-->
+    <button class="botons" type="submit" value="Registrar">Registrar</button>
+    </form>
+
+    <script src="script.js"></script>
+  </section>
+  <script>
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      alert("Conectado al WiFi 'Maschwitz Mall WiFi'")
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-image: url('fondo1.jpg');
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    width: 70%;
+    background: #f0efeb;
+    padding: 30px; 
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-radius: 2%;
+    font-family: 'calibri';
+    color: #d62f31;
+    box-shadow: 7px 13px 37px #000;
+    
+}
+
+.contenedor h1,p {
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 3%;
+}
+
+.contenedor p{
+    color: #1e1e1e;
+}
+
+.contenedor .logo{
+    margin-left: 2%;
+}
+
+.contenedor h2 {
+    font-family: 'Ephesis', cursive;
+    font-size: 185%;
+}
